@@ -1,7 +1,9 @@
 # Ganga-Exercise
 The basic usage of Ganga 6. Of how to run jobs, subjobs, and merging. And an exercise regarding memory management using Python.
+This contains the following.
 
-Installation of Ganga
+*Installation of Ganga
+*Running a HelloWorld job that executes on a Local backend.
 
 virtualenv ./gangaenv
 source ./gangaenv/bin/activate
