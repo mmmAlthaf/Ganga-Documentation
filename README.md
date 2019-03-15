@@ -75,5 +75,6 @@ Then all the occurences will have being calculated for each subjob. To check eac
 First a merger.py should be created. The the following code was executed just before the `j.submit()` line. 
 `j.postprocessors=CustomMerger(files=['ans.txt'],module=File('/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/mymerger.py'))`
 Then it will merge all the number of occurences into one output file. Then the code `j.peek('ans.txt')` can be used to check the final value.
+The job done above is jobs(25). The folder '25' is uploaded here. The  output files can be seen above.
 
 ## Memory Management Exercise
