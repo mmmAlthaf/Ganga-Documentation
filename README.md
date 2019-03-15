@@ -10,3 +10,7 @@ the results at the end.
     2. A Ganga job was created to count the number of occurences of the word “the” in the text of the PDF file 'CERN.pdf'.
     3. Using the ArgSplitter subjobs were created that will each count the occurences for a single page.
     4. Then a merger(CustomMerger) was created to add up the number extracted from each page and the total number was placed into one file.
+
+## Installing Ganga
+The code below was executed to install ganga on a virtualenv.
+1. 
