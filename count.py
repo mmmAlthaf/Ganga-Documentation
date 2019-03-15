@@ -4,8 +4,6 @@ import re
 import os
 import sys
 import re
-# Validate that we have been given one argument
-# (The program name is always the first argument)
 args = sys.argv
 arg_count = len(args)
 if arg_count != 2:
