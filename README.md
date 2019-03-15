@@ -12,5 +12,4 @@ the results at the end.
     4. Then a merger(CustomMerger) was created to add up the number extracted from each page and the total number was placed into one file.
 
 ## Installing Ganga
-The code below was executed to install ganga on a virtualenv.
-1. 
+
