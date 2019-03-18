@@ -79,4 +79,11 @@ The job done above is jobs(25). The folder '25' is uploaded here. The  output fi
 
 ## Memory Management Exercise
 
-hi
+1. A simple python programme that creates a configurable number of simple objects where each is a deep copy of the previous one was created. The objects were created in a delay loop.
+2. Then the memory usage of the programme was monitored by using Pympler , `pympler.asizeof()`. The increase in memory was observed. Deepcopy creates a complete new copy of another object. So if the value of the copied object is changed the previous object doesn't get changed.
+3. Then the references to the objects were released and the memory was monitored. The decrease in allocated memory was observed.
+4. The same was implemented using Shallow Copy. Shallow Copy creates a reference to the same object. It doesn't create a new copy of the object.
+5. A simple `copyOnModify()` method was made the memory efficient. So at first the shallow copies will exist. But if a copy is to be modified then that copy is changed to a deepcopy and then modified. So memory is saved. 
+
+All the above functions can be observed by the python script 'memoryTest.py'
+
