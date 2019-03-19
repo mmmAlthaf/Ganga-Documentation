@@ -34,7 +34,8 @@ print("\nArray of Shallow Copies\n")
 print("array created",shallow)
 print("\n")
 
-#copyOnModify(shallow,2,"Modifying this") #using this to check on the method.
+#using this to check on the method. Modifying the object in the index '2' in the list 'shallow'
+#copyOnModify(shallow,2,"Modifying this") 
 
 
 print("Deep","Shallow")
