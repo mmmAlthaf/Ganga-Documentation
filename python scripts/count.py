@@ -4,6 +4,8 @@ import re
 import os
 import sys
 import re
+import textract
+# Validate that we have been given one argument
 args = sys.argv
 arg_count = len(args)
 if arg_count != 2:
@@ -15,10 +17,13 @@ if not os.path.isfile(input):
     print '{0} is not a valid file'.format(input)
     sys.exit(1)
 
-with open(input) as f:
-    contents = f.read()
-    count = sum(1 for match in re.finditer(r"\bthe\b", contents))
+text = textract.process(input)
+
+count0 = sum(1 for match in re.finditer(r"\bthe\b", text))
+count1= sum(1 for match in re.finditer(r"\bThe\b", text))
+count=count0+count1
 print count
 
 o=open('ans.txt','w')
 o.write(str(count))
+

@@ -43,8 +43,7 @@ The file 'fileSplit.py' was used to split the file 'CERN.pdf'. It was split into
 
 ### Counting the number of occurences of the word “the” in the text of the PDF file 'CERN.pdf'
 
-First the text of 'CERN.pdf' was extracted and saved into a .txt file using a python script 'PDFtoTXT.py'.
-Then a job was created and the python script 'count.py' to count the number of the occurances of the word "the" was attached to the job. 
+A job was created and the python script 'count.py' to count the number of the occurances of the word "the" was attached to the job. 
 So that the job will execute the python scipt when it gets submitted.
 The following lines were executed.
 
@@ -58,7 +57,7 @@ j.submit()
 Then the number of the occurences can be seen by using `j.peek('ans.txt')`.
 
 ### Counting the occurences of each individual file as subjobs using ArgSplitter.
-First each file was converted to .txt using the file 'PDFtoTXT.py'. Then the following lines were executed to get the occurences of each file by creating subjobs and getting an output file for each subjob.
+The following lines were executed to get the occurences of each file by creating subjobs and getting an output file for each subjob.
 
 ```
 j=Job()
