@@ -50,7 +50,7 @@ The following lines were executed.
 ```
 j=Job()
 j.application.exe='/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/count.py'
-j.application.args='/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/CERN.txt'
+j.application.args='/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/CERN.pdf'
 j.outputfiles = [LocalFile('ans.txt')]
 j.submit()
 ```
@@ -62,7 +62,7 @@ The following lines were executed to get the occurences of each file by creating
 ```
 j=Job()
 j.application.exe='/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/count.py'
-args=[["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page0.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page1.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page2.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page3.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page4.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page5.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page6.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page7.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page8.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page9.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page10.txt"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page11.txt"]]
+args=[["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page0.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page1.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page2.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page3.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page4.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page5.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page6.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page7.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page8.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page9.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page10.pdf"],["/home/dark/GSoC/Ganga/gangaenv/bin/pyFiles/document-page11.pdf"]]
 splitter=ArgSplitter(args=args)
 j.splitter=splitter
 j.outputfiles = [LocalFile('ans.txt')]
