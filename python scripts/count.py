@@ -19,9 +19,7 @@ if not os.path.isfile(input):
 
 text = textract.process(input)
 
-count0 = sum(1 for match in re.finditer(r"\bthe\b", text))
-count1= sum(1 for match in re.finditer(r"\bThe\b", text))
-count=count0+count1
+count = len(list(re.finditer(r"(\bthe\b)|(\bThe\b)", text)))
 print count
 
 o=open('ans.txt','w')
