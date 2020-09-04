@@ -76,7 +76,7 @@ First a merger.py should be created. The the following code was executed just be
 Then it will merge all the number of occurences into one output file. Then the code `j.peek('ans.txt')` can be used to check the final value.
 The job done above is jobs(25). The folder '25' is uploaded here. The  output files can be seen above.
 
-## Memory Management Exercise
+## Memory Management
 
 1. A simple python programme that creates a configurable number of simple objects where each is a deep copy of the previous one was created. The objects were created in a delay loop.
 2. Then the memory usage of the programme was monitored by using Pympler , `pympler.asizeof()`. The increase in memory was observed. Deepcopy creates a complete new copy of another object. So if the value of the copied object is changed the previous object doesn't get changed.
